@@ -146,6 +146,8 @@ struct GameView: View {
         let index = allCards.firstIndex(where: {$0.id == randomCard.id})! //Get the index of that card
         allCards.remove(at: index) // remove the card from all_cards
         soundControl(sound: .card_flip)
+      
+        playerPoint = self.calculateCardValue(cards: playerCards)
 
         return randomCard
     }
@@ -414,7 +416,7 @@ struct GameView: View {
                             }
                         }.frame(maxWidth: geometry.size.width, maxHeight:geometry.size.height*0.15)
                         //MARK: Player cards
-                        Text("\(player.username): \(player.coin)").padding().background(lightBlue).foregroundColor(.white).cornerRadius(15)
+                        Text("\(player.username): \(player.coin) coin\nPoint: \(playerPoint)").padding().background(lightBlue).foregroundColor(.white).cornerRadius(15)
                         // Player card list
                         ScrollView(.horizontal) {
                             HStack(){
