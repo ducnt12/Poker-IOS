@@ -434,7 +434,7 @@ struct GameView: View {
                         ScrollView(.horizontal) {
                             HStack() {
                                 ForEach(showCards, id: \.id) { card in
-                                    CardView(faceUpName: card.imageName, width: 100, height: 200)
+                                    CardView(faceUpName: card.imageName, width: 100, height: 185)
                                         .onTapGesture {
                                             if (showCards == playerCards && card.rank == "ace") {
                                                 showChooseValueOp = true
