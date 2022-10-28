@@ -9,8 +9,8 @@ A 2D game with the topic of BlackJack. It has 2 difficulties:
 ## Tech Stack
 Programming language: Swift
 Libraries: 
-  [+] Swift & SwiftUI
-  [+] UserDefault
+    [+] When there is a group of objects with the same attributes inheritted from another class
+    [+] Consider using it when the problem makes statement "A is B" EX. Cat is an animal, dog is an animal
   
  ## Contributor
  Individual Project -> Only Me :v
