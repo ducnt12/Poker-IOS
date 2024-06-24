@@ -1,4 +1,4 @@
-# Poker Game IOS
+# BlackJack IOS
 ## Project Intro
 A 2D game with the topic of BlackJack. It has 2 difficulties:
 - Beginner
